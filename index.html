@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<div id="main">
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Daily Habits & Wellness Survey</p>
+  </header>
+
+<main>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Full Name<br>
+      <input id="name"
+class="full-width"
+type="text" 
+placeholder="Enter your name"
+required>
+</label>
+
+      <label for="email" id="email-label">Email
+        <input id="email"
+class="full-width" 
+type="email"
+placeholder="Enter your email"
+required>
+</label>
+
+      <label for="number" id="number-label">Cell Number<input
+id="number"
+class="full-width"
+type="number"
+min="10"
+max="13"
+placeholder="Cell Number"
+required>
+</label>
+
+<label for="role">We'd love to get to know you better. What best describes your mental health journey?</label>
+<select name="role" id="dropdown" class="full-width">
+  <option>Select Option</option>
+  <option value="exploring">Starting to explore my mental health</option>
+  <option value="going-through-a-hard-time">I'm currently going through a difficult time</option>
+  <option value="overcome-major-mental-health-challenges"> I've overcome major mental health challenges</option>
+  <option value="prefer-not-to-say">I prefer not to say</option>
+</select>
+
+<fieldset>
+  <legend>Have you sought out therapy to assist in your mental health journey? 
+  </legend>
+
+  <div>
+    <input type="radio" name="therapy" value="yes" id="yes" checked>
+    <label for="yes">Yes</label>
+
+    <div>
+      <input type="radio" name="therapy" value="no" id="no">
+      <label for="no">No</label>
+    </div>
+</fieldset>
+
+<label for="accessible">If not, why?</label>
+<select name="therapy-inquiry" id="therapy-inquiry" class="full-width">
+  <option>Select an option</option>
+  <option value="expensive">It was too expensive</option>
+  <option value="mediaid-gave-little-options">I have medicaid and was given little to no options</option>
+  <option value="not-interested">I was simple not interested</option>
+  <option value="previous-bad-experience">I had bad experiences</option>
+</select>
+
+<fieldset>
+  <legend>Which of the following habits are apart of your daily routine?</legend>
+
+  <div>
+    <input 
+    type="checkbox"
+    value="drink-water"
+    id="drink-water"
+    >
+    <label for="drink-water">Drink Water</label>
+  </div>
+
+  <div>
+    <input 
+    type="checkbox"
+    value="exercise"
+    id="exercise"
+    >
+    <label for="exercise">Exercise</label>
+  </div>
+
+  <div>
+    <input 
+    type="checkbox"
+    value="balanced-meals"
+    id="balanced-meals"
+    >
+    <label for="balanced-meals">Eating Balanced Meals</label>
+  </div>
+
+  <div>
+    <input 
+    type="checkbox"
+    value="journaling"
+    id="journaling"
+    >
+    <label for="journaling">Journaling</label>
+  </div>
+
+  <div>
+    <input
+    type="checkbox"
+    value="meditation"
+    id="meditation"
+    >
+    <label for="meditation">Meditation</label>
+  </div>
+</fieldset>
+
+<label for="comments">Is there anything else you'd like to share about your daily habits, mental health, or overall wellness?</label>
+<textarea class="fill-width" name="anything-else" id="anything-else"
+placeholder="Enter your comments here..."></textarea>
+
+<button type="submit" id="submit">Submit</button>
+  </form>
+</main>
+
+<footer>MADE BY DARLYN DIAZ</footer>
+</div>
+
+
+</body>
+</html>
